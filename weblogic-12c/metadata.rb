@@ -1,6 +1,6 @@
 name             'weblogic-12c'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Mike Mochan'
+maintainer_email 'mmochan@me.com'
 license          'All rights reserved'
 description      'Installs/Configures weblogic-12c'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))

@@ -1,24 +1,23 @@
-weblogic-12c Cookbook
-=====================
-TODO: Enter the cookbook description here.
+weblogic Cookbook
+=================
+Install WLS and OSB
 
 e.g.
-This cookbook makes your favorite breakfast sandwich.
+This cookbook installs the WLS and OSB binaries and configures development domain.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+Requires JAVA
 
-e.g.
 #### packages
-- `toaster` - weblogic-12c needs toaster to brown your bagel.
+- `oracle-java6-set-default` - weblogic needs java6 and sets to the default.
 
 Attributes
 ----------
 TODO: List you cookbook attributes here.
 
 e.g.
-#### weblogic-12c::default
+#### weblogic::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +26,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['weblogic-12c']['bacon']</tt></td>
+    <td><tt>['weblogic']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +35,15 @@ e.g.
 
 Usage
 -----
-#### weblogic-12c::default
-TODO: Write usage instructions for each cookbook.
+#### weblogic::default
 
-e.g.
-Just include `weblogic-12c` in your node's `run_list`:
+Just include `weblogic` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[weblogic-12c]"
+    "recipe[weblogic]"
   ]
 }
 ```
@@ -65,4 +62,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Mike Mochan
